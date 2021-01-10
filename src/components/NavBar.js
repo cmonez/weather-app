@@ -7,15 +7,15 @@ import Button from 'react-bootstrap/Button';
 
 const NavBar = () => {
   return (
-  <Navbar bg="light" expand="lg">
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-      <Form inline>
-        <FormControl type="text" placeholder="Zip Code" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-    </Navbar.Collapse>
-  </Navbar>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Form inline>
+          <FormControl type="text" placeholder="Zip Code" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
