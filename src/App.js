@@ -1,10 +1,10 @@
 import NavBar from './components/NavBar'
-import ListGroup from './components/ListGroup'
+import ListOfPlaces from './components/ListOfPlaces'
 function App() {
   return (
     <div className="container">
         <NavBar></NavBar>
-        <ListGroup></ListGroup>
+        <ListOfPlaces></ListOfPlaces>
     </div>
   );
 }
