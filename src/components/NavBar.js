@@ -5,12 +5,19 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import getWeatherInformationByZipcode from '../helpers';
 
 const NavBar = () => {
   const [zipCode, setZipCode] = useState('');
   const onChange = (event) => {
     console.log('zipcode', event.target.value);
     setZipCode(event.target.value);
+  };
+
+  const searchTheZipCode = (zip) => {
+    getWeatherInformationByZipcode(zipCode).then(({ data }) => {
+      console.log('Here you go', data);
+    });
   };
 
   return (
@@ -24,7 +31,9 @@ const NavBar = () => {
             className="mr-sm-2"
             onChange={onChange}
           />
-          <Button variant="outline-success">Search</Button>
+          <Button variant="outline-success" onClick={searchTheZipCode}>
+            Search
+          </Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>
