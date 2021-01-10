@@ -20,6 +20,29 @@ const weatherSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+<<<<<<< HEAD
+=======
+  description: {
+    type: String,
+    required: true,
+  },
+  temperature: {
+    type: Number,
+    required: true,
+  },
+  windSpeed: {
+    type: Number,
+    required: true,
+  },
+  pressure: {
+    type: Number,
+    required: true,
+  },
+  humidity: {
+    type: Number,
+    required: true,
+  },
+>>>>>>> 53da06da9cf8a9875d5f04a7ff2c10189b8b280f
   locationName: {
     type: Number,
     required: true,
