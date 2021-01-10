@@ -1,10 +1,10 @@
 import NavBar from './components/NavBar'
-
+import ListGroup from './components/ListGroup'
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <h1>Hello</h1>
+    <div className="container">
+        <NavBar></NavBar>
+        <ListGroup></ListGroup>
     </div>
   );
 }
