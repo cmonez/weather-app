@@ -4,9 +4,9 @@ import WeatherListItem from './WeatherListItem';
 const ListOfPlaces = () => {
   return (
     <ListGroup>
-      <WeatherListItem/>
-      <WeatherListItem/>
-      <WeatherListItem/>
+      <WeatherListItem />
+      <WeatherListItem />
+      <WeatherListItem />
     </ListGroup>
   );
 };
