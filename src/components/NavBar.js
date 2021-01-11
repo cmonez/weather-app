@@ -16,12 +16,16 @@ const NavBar = ({ setWeather }) => {
 
   const searchTheZipCode = (zip) => {
     getWeatherInformationByZipcode(zipCode).then(({ data }) => {
+<<<<<<< HEAD
       setWeather({
         name: data.name,
         description: data.weather[0].description,
         windSpeed: data.wind.speed,
         temperature: data.main.temp,
       });
+=======
+      console.log('Here you go', data);
+>>>>>>> b89e1b6d96b1aeb177858807fc025aeed388bfd4
     });
   };
 
